@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+
+  .header__desktop-nav {
+    display: block;
+  }
+
+  .hero__section {
+    flex-flow: row;
+    margin-bottom: 1rem;
+  }
+
+  .section__pic-container {
+    width: 400px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .goals__ul {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .goals__ul li {
+    width: 400px;
+  }
+}

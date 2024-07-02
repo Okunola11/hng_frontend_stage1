@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hng Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__desktop">
+            <h1 class="text-3xl font-medium">
+                <a href="#" class="nav-link" data-testid="slackDisplayName">waas</a>
+            </h1>
+            <div>
+                <button id="hamburger-button" class="hamburger-button">
+                    <div class="hamburger-lines"></div>
+                </button>
+                <nav class="header__desktop-nav" aria-label="main">
+                    <a href="#hero" class="nav-link">Home</a>
+                    <a href="#goals" class="nav-link">Goals</a>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu" class="header__mobile none">
+            <nav class="header__mobile-nav" aria-label="mobile">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#goals" class="nav-link">Goals</a>
+            </nav>
+        </section>
+    </header>
+
+    <main class="main">
+        <section id="hero" class="hero__section">
+            <div class="section__pic-container">
+                <img src="./assets/hng-dp.png" width="576px" height="616px" alt="waas hng dp"
+                    data-testid="slackProfilePicture" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Okunola Abdulwasiu</h1>
+                <p class="section__text__p2">Fullstack Developer</p>
+                <div class="section__text__mail">
+                    <p data-testid="slackEmail">abdwasiuayoadeokunola@gmail.com</p>
+                </div>
+            </div>
+        </section>
+        <section id="goals" class="goals__section">
+            <h2 class="goals__section__h2">Next two years</h2>
+            <p>I want to be:</p>
+            <ul class="goals__ul">
+                <li>A senior developer;</li>
+                <li>A digital nomad;</li>
+                <li>Linux Guru;</li>
+                <li>Living halal;</li>
+                <li>Living rich;</li>
+                <li>Living healthy in the tech field;</li>
+            </ul>
+            <div class="goals__section__links">
+                <h3>Link to:</h3>
+                <div class="goals__section__links-container">
+                    <a href="https://hng.tech/learn" data-testid="hngLink">Hng Learn</a>
+                    <a href="https://keyword.dog/" data-testid="keywordLink">Keyword.dog</a>
+                    <a href="https://scrapeanyweb.site/" data-testid="scrapeanywebLink">scrapeanyweb</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <p id="day" data-testid="currentDay"></p>
+        <p id="time" data-testid="currentTimeUTC"></p>
+    </footer>
+</body>
+
+</html>
